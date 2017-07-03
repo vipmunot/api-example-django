@@ -13,4 +13,9 @@ $ source myenv/bin/activate
 $ pip install -r requirements.txt
 $ sh code.sh
 ```
+
+### Landing Page
 <img   src="readme image/landing.PNG">
+
+### Home Page
+<img   src="readme image/home.PNG">
