@@ -21,7 +21,7 @@ $ sh code.sh
 <img   src="readme image/landing.PNG">
 
 ### Home Page
-- Filtering Patients data using following code
+- Filtering Patients data to display today's birthdays using following code
 ```
 @register.filter(name='todaybirthay')
 def today_birthday(pdata):
@@ -34,5 +34,11 @@ def today_birthday(pdata):
         if int(toks[1]) == now.month and int(toks[2]) == now.day:
             plist.append(person)
     return plist
-```    
+```
+- Displaying Upcoming  birthdays latest first
+- Patients information displayed
+  - Patient photo
+  - Patient age
+  - Patient home and cell numbers
+  - Patient email address
 <img   src="readme image/home.PNG">
