@@ -13,4 +13,4 @@ $ source myenv/bin/activate
 $ pip install -r requirements.txt
 $ sh code.sh
 ```
-<img width="1440"  src="C:/Users/Arihant/Documents/GitHub/landing.PNG">
+<img   src="readme images/landing.PNG">
