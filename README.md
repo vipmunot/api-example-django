@@ -16,6 +16,8 @@ $ source myenv/bin/activate
 $ pip install -r requirements.txt
 $ sh code.sh
 ```
+### drchrono API Settings
+<img   src="readme image/api.PNG">
 
 ### Landing Page
 <img   src="readme image/landing.PNG">
