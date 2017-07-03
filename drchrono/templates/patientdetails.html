@@ -1,0 +1,60 @@
+{% include 'header.html' %}
+{% load filters %}
+<body>
+    {% include 'nav.html' %}
+<section id = "landing">
+    <div class="container">
+        <div class="row">
+            <h1>Wish birthday to {{patient.first_name}}  {{patient.last_name}} !!</p> </h1>
+        </div>
+    <form action="/home/sendemail" method="post">
+        {% csrf_token %}
+
+        {{ form }}
+        <div clas="form-group">
+            <label class="control-label col-sm-2">Patient First Name:</label>
+            <div class="col-sm-10">
+              <p class="form-control-static">{{patient.first_name}}</p>
+            </div>
+        </div>
+        <div clas="form-group">
+            <label class="control-label col-sm-2">Patient Last Name:</label>
+            <div class="col-sm-10">
+              <p class="form-control-static">{{patient.last_name}}</p>
+            </div>
+        </div>
+        <div clas="form-group">
+            <label class="control-label col-sm-2">Patient Gender:</label>
+            <div class="col-sm-10">
+              <p class="form-control-static">{{patient.gender}}</p>
+            </div>
+        </div>
+        <div clas="form-group">
+            <label class="control-label col-sm-2">Patient Date Of Birth:</label>
+            <div class="col-sm-10">
+                <p class="form-control-static">{{patient.date_of_birth | age}} years old</p>
+            </div>
+        </div>
+        <div class="clearfix">&nbsp;</div>
+        <div class="row">
+        <div class="form-group">
+            <label>Enter Patient's Email address:</label>
+            <input type="email" class="form-control" name="email"value ={{patient.email}} required>
+        </div>
+         <div class="form-group">
+            <label>Enter Subject for Email:</label>
+            <input type="text" class="form-control" name="subject" value = "Happy Birthday" required>
+        </div>
+        <div class="form-group">
+            <label >BirthDay Message:</label>
+            <textarea class="form-control" rows="5" name="BirthDayMessage"required>Dear {{patient.first_name}},{{patient.home_phone | sub}}</textarea>
+        </div>
+        <center>
+            <button type="submit" class="btn btn-primary">Send Email</button>
+        </center>
+    </form>
+  </div></div>
+  </div>
+</section>
+</body>
+</html>

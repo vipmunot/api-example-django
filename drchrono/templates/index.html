@@ -1,8 +1,15 @@
-<!DOCTYPE html>
-<html>
-  <body>
-    <a href="{% url 'social:begin' 'drchrono' %}">
-      drchrono OAuth
-    </a>
-  </body>
+{% include 'header.html' %}
+<body>
+    {% include 'nav.html' %}
+<section id = "landing">
+          <div class="row">
+        <h1><center>Drchrono Birthday Reminder</center></p> </h1>
+            <center>
+        <a href={{authorizelink}}>
+            <button type="button" class="btn btn-primary">Sign up with Drchrono</button>
+        </a>
+                </center>
+        </div>
+    </section>
+    </body>
 </html>
