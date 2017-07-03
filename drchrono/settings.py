@@ -109,3 +109,19 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+client_id = 'hYQlz8KkEQCd3L4cXNUD3CSITZd4Ge1VGQlyUSBs'
+client_secret ='KCCAQdAxx1z0jRuhESY0JUU1WD0p5ji0712ChfFjfD5s7J7NUoXBy04e3lxu9Fvj387bKUqijGOUAOZp3VxTCTslKCN9vsqQJ86Kw2QC05jFGfKghvKWxdH0bjxHU9ds'
+redirect_uri = 'http://127.0.0.1:8000/home'
+ACCESS_TOKEN = None
+REFRESH_TOKEN = None
+oauth_code = None
+ACCESS_TOKEN_EXPIRES_IN = None
+EMAIL_HOST_USER = 'vipmunot@gmail.com'
+EMAIL_HOST_PASSWORD = '*'
+CSRF_FAILURE_VIEW = True
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
