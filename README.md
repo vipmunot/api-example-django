@@ -6,8 +6,12 @@
 
 ### Setup
 ``` bash
+$ git clone https://github.com/vipmunot/drchrono.git
+$ cd drchrono/
+$ virtualenv myenv
+$ source myenv/bin/activate
 $ pip install -r requirements.txt
-$ python manage.py runserver
+$ sh code.sh
 ```
 
 `social_auth_drchrono/` contains a custom provider for [Python Social Auth](http://psa.matiasaguirre.net/) that handles OAUTH for drchrono. To configure it, set these fields in your `drchrono/settings.py` file:
