@@ -21,4 +21,18 @@ $ sh code.sh
 <img   src="readme image/landing.PNG">
 
 ### Home Page
+- Filtering Patients data using following code
+'''
+@register.filter(name='todaybirthay')
+def today_birthday(pdata):
+    plist = []
+    for person in pdata:
+        if person["date_of_birth"] is None:
+            return False
+        now = datetime.now()
+        toks = person["date_of_birth"].split("-")
+        if int(toks[1]) == now.month and int(toks[2]) == now.day:
+            plist.append(person)
+    return plist
+'''    
 <img   src="readme image/home.PNG">
