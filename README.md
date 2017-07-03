@@ -59,5 +59,4 @@ def sub(value):
 <img   src="readme image/wish.PNG">
 
 ### Email Confirmation
-- Email is recieved as following
 <img   src="readme image/email.PNG">
