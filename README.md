@@ -13,4 +13,4 @@ $ source myenv/bin/activate
 $ pip install -r requirements.txt
 $ sh code.sh
 ```
-<img   src="readme images/landing.PNG">
+<img   src="readme image/landing.PNG">
