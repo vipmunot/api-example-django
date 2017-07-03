@@ -22,7 +22,7 @@ $ sh code.sh
 
 ### Home Page
 - Filtering Patients data using following code
-'''
+```
 @register.filter(name='todaybirthay')
 def today_birthday(pdata):
     plist = []
@@ -34,5 +34,5 @@ def today_birthday(pdata):
         if int(toks[1]) == now.month and int(toks[2]) == now.day:
             plist.append(person)
     return plist
-'''    
+```    
 <img   src="readme image/home.PNG">
