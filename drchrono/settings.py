@@ -125,5 +125,5 @@ ACCESS_TOKEN = None
 REFRESH_TOKEN = None
 oauth_code = None
 ACCESS_TOKEN_EXPIRES_IN = None
-EMAIL_HOST_USER = GMAIL_ID = 'vipmunot@gmail.com'
-EMAIL_HOST_PASSWORD = GMAIL_PASSWORD = '$'
+EMAIL_HOST_USER =  'vipmunot@gmail.com'
+EMAIL_HOST_PASSWORD =  '$'
